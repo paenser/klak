@@ -1,0 +1,434 @@
+/*
+THEME NAME: KLAK
+THEME URI: http://www.klak.de
+AUTHOR: Timm Stra§heim
+AUTHOR URI: http://www.karachofilm.de
+*/
+
+
+/*------------ STRUKTUR ------------*/
+
+html, body {
+    padding: 0;
+    margin: 0px;
+}
+
+div#site-wrapper {
+    min-width: 320px;
+}
+
+div#header-wrapper {
+    width: 100%;
+    max-width: 2000px;
+    height: 312px;
+    margin: 0px auto;
+    /*background-color: #a66b87;*/
+    background-image: url(images/header_bg_02.jpg);
+    background-repeat:no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    border-bottom: 3px solid #fff;
+    margin-bottom: 50px;
+    outline: 3px solid #000;
+}
+
+
+div#content-wrapper {
+    border-bottom: 3px solid #000;
+    margin-bottom: 70px !important;
+}
+
+div#footer-wrapper {
+    width: 100%;
+    max-width: 2000px;
+    margin: 0px auto;
+    min-height: 702px;
+    background-image: url(images/footer_bg_02.jpg);
+    background-repeat:no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    border-top: 3px solid #fff;
+    padding-top: 60px;
+    outline: 3px solid #000;
+    background-color: #000;
+}
+
+h1#site-tile, div#content-wrapper, div#footer-content {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+h1#site-tile {
+    height: 100%;
+    background-image: url(images/klak_logo.png);
+    background-repeat:no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+
+h1 span.subtitle {
+    font-family: 'big_johnregular';
+    letter-spacing: 0.1em;
+    color: #000;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-top: 13%;
+}
+
+span.nodisplay {
+        display: none;
+}
+
+
+/*------------ BREAKPOINTS ------------*/
+
+@media (min-width: 800px) {
+    div#header-wrapper {
+        height: 312px;
+    }
+    
+    h2.entry-title a, h2.entry-title-single, div#backtoklak a {
+    height: 100px;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    div#header-wrapper {
+        height: 200px;
+    }
+    
+    h2.entry-title a, h2.entry-title-single, div#backtoklak a {
+    height: 80px;
+    }
+
+    .textbox-links, .textbox-rechts {
+        width: 100% !important;
+    }
+    
+    ul#ytfb {
+        
+    }
+    
+}
+
+@media (max-width: 480px) {
+    div#header-wrapper {
+        height: 100px;
+    }
+    
+    h2.entry-title a, h2.entry-title-single, div#backtoklak a {
+    height: 60px;
+    }
+    
+    div#pagecontent, div.footer-content {
+    padding: 0px 0px !important;
+    }
+    
+}
+
+/*------------ CONTENT ------------*/
+
+div.video {
+    width: 100%;
+    height: auto;
+    padding: 3px 0;
+}
+
+div.video-wrapper {
+    border-top: 3px solid #000;
+    overflow: hidden;
+    height: auto;
+
+}
+
+div.post {
+    
+}
+
+/*------------ TEXT ------------*/
+
+@font-face {
+    font-family: 'big_johnregular';
+    src: url('fonts/big_john-webfont.eot');
+    src: url('fonts/big_john-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/big_john-webfont.woff2') format('woff2'),
+         url('fonts/big_john-webfont.woff') format('woff'),
+         url('fonts/big_john-webfont.ttf') format('truetype'),
+         url('fonts/big_john-webfont.svg#big_johnregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h2.entry-title a {
+    font-family: 'big_johnregular';
+    letter-spacing: 0.1em;
+    display: block;
+    width: 100%;
+    padding-top: 1%;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+
+}
+
+div#backtoklak a {
+    font-family: 'big_johnregular';
+    letter-spacing: 0.1em;
+    display: block;
+    width: 100%;
+    padding-top: 1%;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+}
+
+div#backtoklak a:hover {
+    background-color: #000 !important;
+    color: #6cfef5 !important;
+}
+
+h2.entry-title-single {
+    font-family: 'big_johnregular';
+    letter-spacing: 0.1em;
+    display: block;
+    width: 100%;
+    padding-top: 1%;
+    text-decoration: none;
+    color: #6cfef5;
+    background-color: #000;
+    margin: 0;
+}
+
+
+span.number {
+    display: block;
+    height: 100%;
+    width: 13%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    float: left;
+    text-indent: 10px;
+}
+
+span.name {
+    display: block;
+    height: 100%;
+    width: 87%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    text-indent: 10px;
+}
+
+h2.entry-title, div#backtoklak {
+    margin: 0 0;
+    border-top: 3px solid #000;
+}
+
+
+h2.entry-title a:hover {
+    background-color: #000 !important;
+    color: #6cfef5 !important;
+}
+
+/*-------------- AENDERUNGEN NEUES VIDEO ----------------*/
+
+a#p10 {
+    background-color: #000;
+    color: #6cfef5;
+}
+
+#video-wrapper09, #video-wrapper08, #video-wrapper07, #video-wrapper01, #video-wrapper02, #video-wrapper03, #video-wrapper04, #video-wrapper05, #video-wrapper06, #video-wrapperf2, #video-wrapperf1 {
+    display: none;
+}
+
+div#pagecontent {
+    padding: 30px 40px;
+}
+
+img.textimage {
+    width: 100%;
+    height: auto;
+    margin: 20px auto 5px auto;
+    max-width: 485px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+}
+
+
+/*-------------- FOOTER ----------------*/
+
+h2#footerh2 a {
+    color: #fff;
+    background-color: transparent;
+}
+
+h2#footerh2 {
+    border-top: 3px solid #fff;
+}
+    
+h2#footerh2 a:hover {
+    color: #6cfef5 !important;
+    background-color: transparent !important;
+}
+
+div.footer-content-wrapper {
+    border-top: 3px solid #fff;
+    padding: 5px 0 0 0;
+    overflow: hidden;
+    height: auto;
+    background-color: transparent;
+}
+
+div.footer-content {
+        padding: 30px 40px;
+        background-color: #fff;
+        margin-bottom: 5px;
+}
+
+img.footer-icon {
+    max-height: 60px;
+    max-width: 60px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+p {
+    font: 15px/25px 'Anonymous Pro', Arial, sans-serif;
+    margin: 0 0;
+    padding: 15px;
+}
+
+.textbox-links {
+    width: 100%;
+    height: auto;
+
+}
+
+div#social-icons {
+    border-top: 3px solid #fff;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+a.social-link {
+    margin: 0 2%;
+    color: #fff;
+}
+
+a.social-link:hover {
+    color: #6cfef5;
+}
+
+div#social-icons-center {
+    margin-left: 15%;
+}
+
+div#mc_embed_signup form {
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+    max-width: 500px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+}
+
+div#mc_embed_signup_scroll {
+    width: 100% !important;
+}
+
+input#mce-EMAIL {
+    border: 3px solid grey !important;
+    height: 60px !important;
+}
+
+input#mc-embedded-subscribe {
+    margin: 15px 0 10px 0;
+    height: 60px;
+    font: 15px/25px 'Anonymous Pro', Arial, sans-serif !important;
+    color: #fff;
+    background-color: #333;
+    border: 0px;
+}
+
+input#mc-embedded-subscribe:hover {
+    background-color: #6cfef5;
+    cursor: pointer;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #333 !important;
+    font: 15px/15px 'Anonymous Pro', Arial, sans-serif !important;
+    text-align: center;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #666 !important;
+    font: 15px/15px 'Anonymous Pro', Arial, sans-serif !important;
+    text-align: center;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #666 !important;
+       font: 15px/15px 'Anonymous Pro', Arial, sans-serif !important;
+       text-align: center;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #666 !important;
+       font: 15px/15px 'Anonymous Pro', Arial, sans-serif !important;
+       text-align: center;
+}
+
+input.button, input.email {
+    min-width: 190px;
+    width: 100%;
+}
+
+#footer-navigation {
+    width: 100%;
+    height: 50px;
+    margin-top: 120px;
+}
+
+#footer-navigation ul li, #footer-navigation ul li p, #footer-navigation ul li a {
+    display: block;
+    float: left;
+    margin-right: 15px;
+font: 11px/24px 'Anonymous Pro', Arial, sans-serif !important;
+color: #fff;
+padding: 0px !important;
+}
+
+ul#ytfb {
+    float: right;
+    width: 45%;
+    overflow: hidden;
+    margin-top: 6px !important;
+    padding: 0 0 !important;
+}
+
+ul#ytfb li{
+    list-style: none;  
+}
+
+li.fb-button {
+    margin-top: 5px !important;
+}
